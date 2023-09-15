@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Home = () => {
     const [allCourse, setAllCourse] = useState([]);
     const [selectedCourse, setSelectedCourse] = useState([]);
-    const [remaining, setRemaining] = useState(0);
+    const [remaining, setRemaining] = useState(20);
     const [totalCredit, setTotalCredit] = useState(0);
 
 
