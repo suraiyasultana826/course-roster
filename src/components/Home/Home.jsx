@@ -2,9 +2,11 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import "./Home.css"
+import Cart from '../Cart/Cart';
 
 const Home = () => {
     const [allCourse, setAllCourse] = useState([]);
+    const [selectedCourse, setSelectedCourse] = useState([]);
 
 
     useEffect(() => {
@@ -14,6 +16,11 @@ const Home = () => {
     },[]);
     
 
+    const handleSelectCourse = (course) => {
+        setSelectedCourse([...selectedCourse, course]);
+
+    };
+    console.log(selectedCourse)
     return (
         <div>
             <h1>Course Registration</h1>
@@ -33,14 +40,14 @@ const Home = () => {
                                 <p>Price: {course.price}</p>
                                 <p>Credit: {course.credit_hours} hr</p>
                             </div>
-                            <button className='card-btn'>Select</button>
+                            <button onClick={() => handleSelectCourse(course)} className='card-btn'>Select</button>
 
                     </div>
                         ))
                     }
                     </div>
                     <div className="cart">
-                        <h1>Course Name</h1>
+                        <Cart selectedCourse = {selectedCourse}></Cart>
                     </div>
                     </div>
                     </div> 
