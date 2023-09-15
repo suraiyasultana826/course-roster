@@ -1,0 +1,28 @@
+.card{
+    width:250px;
+    height: 400px;
+    /* margin: 30px; */
+    
+}
+.photo{
+    width: 250px;
+}
+.info{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-btn{
+    width: 200px;
+    background-color: rgb(31, 168, 168);
+}
+.home-container{
+    display: flex;
+}
+.card-container{
+    width: 850px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 50px;
+    /* margin: 50px ; */
+}

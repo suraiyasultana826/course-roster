@@ -1,0 +1,66 @@
+[
+    {
+      "image_url": "https://i.ibb.co/0mrRybV/Rectangle-2.png",
+      "course_name": "Introduction to Python Programming",
+      "credit_hours": 3,
+      "price": 4999,
+      "course_details": "Learn the fundamentals of Python programming, including variables, loops, and functions. Suitable for beginners."
+    },
+    {
+      "image_url": "https://i.ibb.co/7gbKHwC/Rectangle-2-6.png",
+      "course_name": "JavaScript Web Development",
+      "credit_hours": 4,
+      "price": 6999,
+      "course_details": "Master JavaScript for web development. Covers DOM manipulation, AJAX, and ES6 features."
+    },
+    {
+      "image_url": "https://i.ibb.co/f4JXHBX/Rectangle-2-3.png",
+      "course_name": "Data Science with Python",
+      "credit_hours": 5,
+      "price": 8999,
+      "course_details": "Explore data analysis, visualization, and machine learning using Python and popular libraries."
+    },
+    {
+      "image_url": "https://i.ibb.co/rFP5Grz/Rectangle-2-1.png",
+      "course_name": "Java Programming Fundamentals",
+      "credit_hours": 3,
+      "price": 5999,
+      "course_details": "Get started with Java programming. Covers object-oriented concepts and basic Java syntax."
+    },
+    {
+      "image_url": "https://i.ibb.co/JHcn9w5/Rectangle-3-1.png",
+      "course_name": "Full-Stack Web Development ",
+      "credit_hours": 8,
+      "price": 19999,
+      "course_details": "Become a full-stack web developer with hands-on experience in front-end and back-end technologies."
+    },
+    {
+      "image_url": "https://i.ibb.co/0Yb47HP/Rectangle-2-4.png",
+      "course_name": "C++ Programming Mastery",
+      "credit_hours": 4,
+      "price": 7999,
+      "course_details": "Advanced C++ programming techniques, including templates, STL, and memory management."
+    },
+    {
+      "image_url": "https://i.ibb.co/frvkw1v/Rectangle-2-2.png",
+      "course_name": "Mobile App Development ",
+      "credit_hours": 6,
+      "price": 12999,
+      "course_details": "Build cross-platform mobile apps using React Native. Covers UI development."
+    },
+    {
+      "image_url": "https://i.ibb.co/1bQdsnf/Rectangle-3.png",
+      "course_name": "Machine Learning for Beginners",
+      "credit_hours": 4,
+      "price": 8999,
+      "course_details": "An introduction to machine learning concepts and algorithms using Python."
+    },
+    {
+      "image_url": "https://i.ibb.co/qjttN4f/Rectangle-2-5.png",
+      "course_name": "Ethical Hacking and Cybersecurity",
+      "credit_hours": 6,
+      "price": 14999,
+      "course_details": "Learn ethical hacking techniques and cybersecurity best practices."
+    }
+  ]
+  
