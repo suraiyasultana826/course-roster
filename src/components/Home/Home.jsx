@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from 'react';
 import "./Home.css"
 import Cart from '../Cart/Cart';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
     const [allCourse, setAllCourse] = useState([]);
@@ -22,16 +24,22 @@ const Home = () => {
         const isExist = selectedCourse.find(item => item.course_name == course.course_name)
        let credit = course.credit_hours;
         if(isExist){
-            alert("Already booked")
+           toast("Already booked")
         }
         else{
             selectedCourse.forEach(item => {
                 credit= credit + item.credit_hours;
             });
             const totalRemaining = 20 - credit;
+           
+            if(credit > 20){
+                return toast('Credit hour over.You can not add more courses')
+            }
+           else{
             setTotalCredit(credit);
             setRemaining(totalRemaining);
             setSelectedCourse([...selectedCourse, course])
+           }
         }
         // setSelectedCourse([...selectedCourse, course]);
 

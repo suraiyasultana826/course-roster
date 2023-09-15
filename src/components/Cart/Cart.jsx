@@ -2,12 +2,13 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from 'react';
+import './Cart.css'
 
 
 const Cart = ({selectedCourse, remaining, totalCredit}) => {
     console.log(selectedCourse)
     return (
-        <div>
+        <div className='course-list'>
             <h4>Credit Hour Remaining {remaining}</h4>
             <hr />
             <h3>Course Name</h3>
