@@ -7,6 +7,8 @@ import Cart from '../Cart/Cart';
 const Home = () => {
     const [allCourse, setAllCourse] = useState([]);
     const [selectedCourse, setSelectedCourse] = useState([]);
+    const [remaining, setRemaining] = useState(0);
+    const [totalCredit, setTotalCredit] = useState(0);
 
 
     useEffect(() => {
@@ -17,7 +19,21 @@ const Home = () => {
     
 
     const handleSelectCourse = (course) => {
-        setSelectedCourse([...selectedCourse, course]);
+        const isExist = selectedCourse.find(item => item.course_name == course.course_name)
+       let credit = course.credit_hours;
+        if(isExist){
+            alert("Already booked")
+        }
+        else{
+            selectedCourse.forEach(item => {
+                credit= credit + item.credit_hours;
+            });
+            const totalRemaining = 20 - credit;
+            setTotalCredit(credit);
+            setRemaining(totalRemaining);
+            setSelectedCourse([...selectedCourse, course])
+        }
+        // setSelectedCourse([...selectedCourse, course]);
 
     };
     console.log(selectedCourse)
@@ -47,7 +63,7 @@ const Home = () => {
                     }
                     </div>
                     <div className="cart">
-                        <Cart selectedCourse = {selectedCourse}></Cart>
+                        <Cart selectedCourse = {selectedCourse} remaining={remaining} totalCredit={totalCredit}></Cart>
                     </div>
                     </div>
                     </div> 
